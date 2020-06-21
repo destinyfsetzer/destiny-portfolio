@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="nav">
+            <nav>
+                <a href="/imagegallery/imagegallery.html">Portfolio</a>
+                <a href="/aboutme/aboutpage.html">About</a>
+                <a href="https://medium.com/@destinysetzer">Blog</a>
+                <a href="/contact/contact.html">Contact</a>
+                <a href="/index.html">Home</a>
+            </nav>
+        </div>
+        <div class="profilepic">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="email">
+            <form action="results.html" method="GET" enctype="multipart/form-data">
+                <label for="email">
+                    <h2>Email:</h2>
+                </label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <textarea rows="4" cols="40" name="comment" form="usrform" maxlenth="500" minlength="20">
+                Comments</textarea>
+                <br>
+        </div>
+        <div class="contact-back">
+            <h2>Would you like me to reach out?</h2>
+            <input type="radio" id="yes" name="checked" value="yes">
+            <label for="male">Yes Please</label><br>
+            <input type="radio" id="no" name="checked" value="no">
+            <label for="female">No Thanks</label><br>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="birthday">
+            <h2>Would you like to sign up for a Birthday wish?</h2>
+            <label for="birthday">Enter Your Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="checkbox">
+            <h2>How did you hear about me?</h2>
+            <input type="checkbox" id="heardfrom1" name="heardfrom1" value="classmate">
+            <label for="heardfrom1"> Classmate</label><br>
+            <input type="checkbox" id="heardfrom2" name="heardfrom2" value="resume">
+            <label for="heardfrom2"> Resume Submission</label><br>
+            <input type="checkbox" id="heardfrom3" name="heardfrom3" value="linkedin">
+            <label for="heardfrom3"> LinkedIn</label><br>
+            <input type="checkbox" id="heardfrom4" name="heardfrom4" value="coding">
+            <label for="heardfrom3"> Coding Academy Rec</label><br>
+            <br>
+            </form>
+        </div>
+    </div>
+    <!--close grid-container-->
+    <script src="contact.js"></script>
+</body>
+</html>
